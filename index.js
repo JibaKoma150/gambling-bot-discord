@@ -130,8 +130,8 @@ client.on('messageCreate', (message) => {
         message.reply("💰 Tu as reçu **50$** pour ton hour !");
     }
 
-    // --- COMMANDE !loterie ---
-    if (message.content === "!loterie") {
+    // --- COMMANDE !gambling ---
+    if (message.content === "!gambling") {
         if (users[id].tickets <= 0) {
             return message.reply("❌ Tu dois avoir un 🎟️ Ticket de casino pour jouer ! Achète-en avec `!buy ticket`.");
         }
